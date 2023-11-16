@@ -1,16 +1,20 @@
-
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: small;
+}
 
 #container {
     display: flex;
     height: 100vh;
     width: 100vw;
-    margin: 0;
 }
 
 #left-container {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 95%;
 }
 
 #inner-container {
@@ -19,10 +23,9 @@
 }
 
 #side-panel {
-    height: 600px;
-    width: 7%;
+    width: 5%;
     padding: 2px;
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     border-right: solid;
@@ -60,4 +63,56 @@ nav {
 
 #messanger-body {
     width: 80%;
+}
+
+#messages {
+    height: 85%;
+}
+
+#input-msg {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#input-attach {
+    padding: 10px;
+    border: 2px solid;
+    border-color: #E8E8E8;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    width: 85%;
+}
+
+input {
+    outline: none;
+    width: 95%;
+    background-color: #F7F7F7;
+    border: none;
+    font-weight: bold;
+}
+
+
+button {
+    padding: 9px;
+    border: none;
+    background-color: #6B0F99;
+    border-radius: 5px;
+    color: white;
+}
+
+
+svg.purple {
+    fill: #6B0F99;
+}
+
+.sender-profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#sender-name {
+    margin-top: 10px;
 }
