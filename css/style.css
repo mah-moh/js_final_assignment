@@ -98,12 +98,21 @@ input {
 
 
 button {
-    padding: 9px;
+    display: flex;
+    padding: 10px;
     border: none;
     background-color: #6B0F99;
     border-radius: 5px;
     color: white;
     margin-left: 20px;
+}
+
+button.text {
+    margin-top: 0;
+}
+
+button.svg {
+    margin-top: 10px;
 }
 
 
@@ -192,5 +201,13 @@ svg.carrot-down {
 
     #messanger-body {
         width: 100%;
+    }
+
+    .attach-icon {
+        display: none;
+    }
+
+    #messages {
+        height: 88%;
     }
   }
