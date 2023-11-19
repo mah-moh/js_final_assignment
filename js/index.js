@@ -31,7 +31,7 @@ function getRandomMessage() {
       "I'm on a texting diet. Please send chocolates instead",
       "Texting me? Don't expect a reply unless it's cat videos or memes",
       "Closed for spontaneous conversations. Only accepting memes.",
-      "Enter at your own risk; giggles and memes may ensue!",
+      "Wa-wa-wee-wa!",
       "Nice to meet you!"
     ];
     return messages[Math.floor(Math.random() * messages.length)];
@@ -93,8 +93,6 @@ function displayMessages(inputValue) {
         }, 100);
 
         messageBody.insertBefore(messageElement, messageBody.firstChild);
-
-        messageBody.appendChild(document.createElement('br'));
 
 
         document.getElementById('input-field').value = '';

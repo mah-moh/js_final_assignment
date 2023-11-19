@@ -70,7 +70,7 @@ nav {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 #input-msg {
