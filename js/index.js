@@ -37,16 +37,16 @@ function getRandomMessage() {
     return messages[Math.floor(Math.random() * messages.length)];
 }
 
-function simulateTypingIndicator() {
-    var typingMessage = document.createElement('p');
+function animateTypingIndicator() {
+    const typingMessage = document.createElement('p');
     typingMessage.textContent = "Borat is typing";
     typingMessage.classList.add('typing-indicator');
   
     messageBody.appendChild(typingMessage);
 
     
-    var dots = 0;
-    var intervalId = setInterval(function () {
+    let dots = 0;
+    let intervalId = setInterval(function () {
         if (dots < 3) {
         typingMessage.textContent += '.';
         dots++;
@@ -59,7 +59,7 @@ function simulateTypingIndicator() {
     setTimeout(function () {
         clearInterval(intervalId);
         messageBody.removeChild(typingMessage);
-    }, 5000);
+    }, 6000);
 }
 
 function sendRandomMessage() {
@@ -99,10 +99,12 @@ function displayMessages(inputValue) {
 
         document.getElementById('input-field').value = '';
 
-        simulateTypingIndicator();
+        setTimeout(() => {
+            animateTypingIndicator();
+        }, 1000);
 
         setTimeout(() => {
             sendRandomMessage();
-        }, 5000);
+        }, 7000);
     }
 }
